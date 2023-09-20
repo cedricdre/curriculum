@@ -1,0 +1,9 @@
+:root {
+    --my-green: #0ACF83;
+}
+.bg-my-green {
+    background-color: var(--my-green);
+}
+.text-my-green {
+    color: var(--my-green);
+}
