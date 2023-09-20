@@ -1,9 +1,67 @@
 :root {
     --my-green: #0ACF83;
 }
+body {
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* Typo */
+.roboto-serif {
+    font-family: 'Roboto Serif', 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+.fw-black {
+    font-weight: 900;
+}
+.title-lg {
+    font-size: 3rem;
+}
+@media all and (min-width: 576px) {
+    .title-lg {
+        font-size: 4rem;
+    }
+}
+/* Colors */
 .bg-my-green {
     background-color: var(--my-green);
 }
+.bg-my-green-light {
+    background-color: #E6FAF3;
+}
+.bg-gray-dark {
+    background-color: #111111;
+}
 .text-my-green {
     color: var(--my-green);
+}
+.bg-gray-light {
+    background-color: #EDEDED;
+}
+/* Header */
+header {
+    height: 100vh;
+}
+.btn-my-green {
+    background-color: var(--my-green);
+    color: #000;
+    border-radius: 2em;
+}
+.btn-my-green:hover {
+    background-color: #099861;
+    color: #000;
+}
+.btn-outline-my-green {
+    background-color:transparent;
+    border: #0ACF83 solid 1px;
+    color: #0ACF83;
+    border-radius: 2em;
+}
+.btn-outline-my-green:hover {
+    background-color: var(--my-green);
+    border: #0ACF83 solid 1px;
+    color: #000;
+    border-radius: 2em;
 }
