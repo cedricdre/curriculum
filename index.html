@@ -17,7 +17,7 @@
 <header class="bg-gray-dark">
     <nav class="navbar navbar-expand-lg fixed-top bg-gray-dark" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="#">C. DREUE</a>
+            <a class="navbar-brand" href="#"><img src="./public/assets/img/logo-dreue.svg" height="35" alt="logo cedric dreue"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,7 +45,7 @@
                 <div class="py-3 py-lg-5">
                     <div class="text-light text-center text-md-start">
                         <h1 class="fw-black title-lg mb-4">Cédric DREUE</h1>
-                        <h3 class="fs-1 roboto-mono"><span class="bg-gray-light text-my-green rounded-2"><span class="text-secondary">&lsaquo;</span>Développeur web<span class="text-secondary">&#47;&rsaquo;</span></span></h3>
+                        <h3 class="display-4 roboto-mono"><span class="bg-gray-light text-my-green rounded-2"><span class="text-secondary">&lsaquo;</span>Développeur web<span class="text-secondary">&#47;&rsaquo;</span></span></h3>
                         <h3 class="fs-1 roboto-serif text-my-green mb-4">Graphiste <span class="text-light">&</span> Web Designer</h3>
                         <p class="d-none d-lg-block fs-5 mb-5"><span class="text-my-green fw-bold">«</span> Actuellement en préparation au titre de développeur web, je suis à la recherche d'un emploi. Fort de 15 années d'expérience en tant que graphiste, j'apporte une expertise créative à l'univers du développement web. <span class="text-my-green fw-bold">»</span></p>
                         <div class="d-none d-md-block">
@@ -60,7 +60,7 @@
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-4 d-none d-lg-block">
-                <img src="./public/assets/img/balise.svg" alt="" style="margin-top: -300px;">
+                <img src="./public/assets/img/balise.svg" alt="" style="margin-top: -350px;">
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@
 <!-- Main -->
 <main>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="py-lg-5">
         <div class="container">
             <div class="row gx-lg-5">
                 <div class="col-12 col-lg-6 py-4 py-lg-5">
@@ -114,7 +114,7 @@
     <!-- End About -->
     <!-- Skills -->
     <section id="skills" class="py-5 bg-gray-dark">
-        <div class="container text-light">
+        <div class="container text-light py-lg-5">
             <h2 class="fs-1 fw-bold text-center mb-3 mb-lg-5"><span class="text-my-green">&#123;</span> Mes compétences <span class="text-my-green">&#125;</span></h2>
             <div class="row gx-lg-5">
                 <!-- Skills FRONT-END -->
@@ -213,7 +213,7 @@
     <!-- End Skills -->
     <!-- Software -->
     <section id="software" class="bg-my-green py-5">
-        <div class="container text-light">
+        <div class="container text-light py-lg-5">
             <h3 class="text-center mb-4 mb-lg-5">Mes compétences logiciels</h3>
             <div class="row justify-content-center">
                 <div class="col-5 col-lg-2 opacity-logo h-100 mb-4 mb-lg-0">
@@ -258,7 +258,7 @@
     <!-- End Software -->
     <!-- Gallery -->
     <section id="gallery" class="py-5">
-        <div class="container">
+        <div class="container py-lg-5">
             <h2 class="fw-bold roboto-mono text-center mb-4 mb-lg-5"><span class="text-my-green">&lsaquo;</span>Mes Projets & Réalisations<span class="text-my-green">&#47;&rsaquo;</span></h2>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4 px-0 px-lg-2 mb-lg-3">
@@ -279,7 +279,7 @@
     <!-- End Gallery -->
     <!-- Contact -->
     <section id="contact" class="py-5 bg-gray-light">
-        <div class="container">
+        <div class="container py-lg-5">
             <h2 class="fs-1 fw-bold roboto-mono text-center mb-3 mb-lg-5"><span class="text-my-green">&#123;</span>Contact<span class="text-my-green">&#125;</span></h2>
             <div class="row">
                 <div class="col-12 col-lg-4">
@@ -297,35 +297,35 @@
                 <div class="col-12 col-lg-8">
                     <form class="row g-3">
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="inputName" placeholder="Nom">
+                            <input type="text" class="form-control" id="inputName" placeholder="Nom" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="inputFirstName" placeholder="Prénom">
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="Prénom" required>
                         </div>                        
                         <div class="col-md-6">
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="password" class="form-control" id="inputPassword4">
+                            <input type="tel" class="form-control" id="inputTel" placeholder="Téléphone">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <input type="text" class="form-control" id="inputObjet" placeholder="Objet" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <textarea class="form-control"  id="inputTextarea" rows="4" placeholder="Votre texte ..." required></textarea>
                         </div>
                         <div class="col-12">
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
                             <label class="form-check-label" for="gridCheck">
-                                Check me out
+                                Je déclare ...
                             </label>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-my-green">Envoyer</button>
                         </div>
-                        </form>
+                    </form>
                 </div>
             </div>
         </div>
@@ -333,11 +333,20 @@
     <!-- End Contact -->
 </main>
 <!-- End Main -->
-<footer class="py-5">
-    <div class="container">
-        <div class="row">
+<footer class="py-5 bg-gray-dark">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <p class="col-12 col-lg-5 mb-0 text-light">&copy; 2023 Company, Inc</p>
 
-        </div>
+        <a href="/" class="col-12 col-lg-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="./public/assets/img/logo-dreue.svg" height="35" alt="logo cedric dreue">
+        </a>
+
+        <ul class="col-12 nav col-lg-5 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">À propos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Mes compétences</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Mes projets</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Mentions légales</a></li>
+        </ul>
     </div>
 </footer>
     
